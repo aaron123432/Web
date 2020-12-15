@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\xiaof\Dropbox\My PC (DESKTOP-QQ97MJQ)\Desktop\Web\.git"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/aaron123432/Web.git"/>
+		<item value="https://github.com/aaron123432/Web/tree/Aaron"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+</section>
