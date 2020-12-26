@@ -1,0 +1,43 @@
+:host {
+  text-align: center;
+}
+
+nz-header,
+nz-footer {
+  background: #ff3f3f;
+  color: #fff;
+  line-height: 1.5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+nz-content {
+  background: rgba(16, 142, 233, 1);
+  color: #fff;
+  line-height: 120px;
+  min-height: calc(100vh - 120px );
+  height:1500px
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
+nz-layout:last-child {
+  margin: 0;
+}
+#menu-sroll-down{
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  line-height: 1.5;
+  
+  background: #ff3f3f;
+}
+
+.drop-down-menu{
+  margin: 20px;
+}

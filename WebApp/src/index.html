@@ -6,6 +6,54 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+
+  <script>
+    window.onload = (function () {
+      console.log(1111)
+      var fixednav = document.getElementById("menu-sroll-down"); //Get the element
+      var win = window; //get Windows Obj
+      var val = 0;	// value of transparency
+     
+      window.onscroll = (function () {
+        // location of scroll
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(fixednav)
+        if (scrollTop >= 60) {
+          if (fixednav.style.display == 'none') {
+            console.log(11111)
+            fixednav.style.display = '';
+            console.log(222222)
+            this.fadeIn(fixednav)
+            this.val = 0;
+          }
+        } else {
+          if (fixednav.style.display != 'none') {
+            this.val = 0;
+            fixednav.style.display = 'none';
+            this.fadeOut(fixednav)
+          }
+        }
+      })
+    })
+    function fadeOut(elem, speed, opacity) {
+      elem.style.filter = 'alpha(opacity:' + 0 + ')';
+      elem.style.opacity = 0
+    }
+    function fadeIn(elem) {
+      var timer = setInterval(function () {
+        elem.style.filter = 'alpha(opacity:' + this.val + ')';
+        elem.style.opacity = this.val / 100
+        this.val += 1;
+  
+        if (this.val >= 100) {
+          clearInterval(timer)
+        }
+      }, 18)
+    } 
+  </script>
 </head>
 <body>
   <app-root></app-root>
